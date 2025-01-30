@@ -11,6 +11,7 @@ export default function InputArea({
   onStyle3,
   onStyle4,
   onStyle5,
+  onStyle6,
 }) {
   return (
     <>
@@ -30,6 +31,7 @@ export default function InputArea({
           onStyle3={onStyle3}
           onStyle4={onStyle4}
           onStyle5={onStyle5}
+          onStyle6={onStyle6}
         />
       </div>
     </>

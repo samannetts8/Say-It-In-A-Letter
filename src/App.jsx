@@ -29,6 +29,9 @@ function App() {
   function changeFont5() {
     setFont("six");
   }
+  function changeFont6() {
+    setFont("seven");
+  }
 
   return (
     <div className="main-container">
@@ -41,6 +44,7 @@ function App() {
           onStyle3={changeFont3}
           onStyle4={changeFont4}
           onStyle5={changeFont5}
+          onStyle6={changeFont6}
         />
       </div>
       <div className="output-container">
