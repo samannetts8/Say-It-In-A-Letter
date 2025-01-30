@@ -1,3 +1,3 @@
-export default function MainMessageBox({ MessageBoxContent }) {
-  return <p>{MessageBoxContent}</p>;
+export default function MainMessageBox({ MessageBoxContent, fontStyle }) {
+  return <p style={{ fontFamily: fontStyle }}>{MessageBoxContent}</p>;
 }
