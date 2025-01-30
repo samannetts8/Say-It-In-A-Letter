@@ -6,10 +6,13 @@ export default function Board({ MessageBoxContent, fontStyle }) {
     <>
       <div>o</div>
       <div className="postcard-container">
-        <MainMessageBox
-          MessageBoxContent={MessageBoxContent}
-          fontStyle={fontStyle}
-        />
+        <div className="right-message-container">
+          <MainMessageBox
+            MessageBoxContent={MessageBoxContent}
+            fontStyle={fontStyle}
+          />
+        </div>
+        <div className="left-message-container"></div>
       </div>
       <div>o</div>
     </>
