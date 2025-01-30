@@ -24,6 +24,9 @@ export default function InputArea({
       <div className="fontsize-container">
         <FontSize />
       </div>
+      <div className="font-title-div">
+        <p className="pick-a-font">Choose A Font:</p>
+      </div>
       <div className="fontbutton-container">
         <FontStyle
           onStyle1={onStyle1}
@@ -33,7 +36,36 @@ export default function InputArea({
           onStyle5={onStyle5}
           onStyle6={onStyle6}
         />
+        <div className="color-picker"></div>
       </div>
+      <div>Stickers go here</div>
+      <div>Stickers go here</div>
+      <div>Stickers go here</div>
+      <div>Stickers go here</div>
+      <div>Stickers go here</div>
+      <div>Stickers go here</div>
+      <div>Stickers go here</div>
+      <div>Stickers go here</div>
+      <div>Stickers go here</div>
+      <div>Stickers go here</div>
+      <div>Stickers go here</div>
+      <div>Stickers go here</div>
+      <div>Stickers go here</div>
+      <div>Stickers go here</div>
+      <div>Stickers go here</div>
+      <div>Stickers go here</div>
+      <div>Stickers go here</div>
+      <div>Stickers go here</div>
+      <div>Stickers go here</div>
+      <div>Stickers go here</div>
+      <div>Stickers go here</div>
+      <div>Stickers go here</div>
+      <div>Stickers go here</div>
+      <div>Stickers go here</div>
+      <div>Stickers go here</div>
+      <div>Stickers go here</div>
+      <div>Stickers go here</div>
+      <div>Stickers go here</div>
     </>
   );
 }

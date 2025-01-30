@@ -1,6 +1,9 @@
+import "./InputTextBox.css";
+
 export default function InputTextBox({ onInputChange, textboxContent }) {
   return (
     <textarea
+      className="no-border-textarea"
       type="text"
       id="fname"
       name="fname"
