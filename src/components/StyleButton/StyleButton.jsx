@@ -1,3 +1,9 @@
+import "./StyleButton.css";
+
 export default function StyleButton({ fontname, onStyleButtonClick }) {
-  return <button onClick={onStyleButtonClick}>{fontname}</button>;
+  return (
+    <button className="buttonstyle" onClick={onStyleButtonClick}>
+      {fontname}
+    </button>
+  );
 }

@@ -1,4 +1,5 @@
 import StyleButton from "../StyleButton/StyleButton";
+import "./FontStyle.css";
 
 export default function FontStyle({
   onStyle1,
@@ -6,14 +7,31 @@ export default function FontStyle({
   onStyle3,
   onStyle4,
   onStyle5,
+  onStyle6,
 }) {
   return (
     <div>
-      <StyleButton onStyleButtonClick={onStyle1} fontname={"Harmond"} />
-      <StyleButton onStyleButtonClick={onStyle2} fontname={"impact"} />
-      <StyleButton onStyleButtonClick={onStyle3} fontname={"NeneMentana"} />
-      <StyleButton onStyleButtonClick={onStyle4} fontname={"GILL SANS"} />
-      <StyleButton onStyleButtonClick={onStyle5} fontname={"Gill Sans Bold"} />
+      <div className={"HomemadeApple-button"}>
+        <StyleButton
+          onStyleButtonClick={onStyle1}
+          fontname={"Homemade Apple"}
+        />
+      </div>
+      <div className={"Farewell"}>
+        <StyleButton onStyleButtonClick={onStyle2} fontname={"Farewell"} />
+      </div>
+      <div className={"soul-gate"}>
+        <StyleButton onStyleButtonClick={onStyle3} fontname={"Soul Gate"} />
+      </div>
+      <div className={"scriptina"}>
+        <StyleButton onStyleButtonClick={onStyle4} fontname={"Scriptina"} />
+      </div>
+      <div className={"beth-ellen"}>
+        <StyleButton onStyleButtonClick={onStyle5} fontname={"Beth Ellen"} />
+      </div>
+      <div className={"Gill-Sans"}>
+        <StyleButton onStyleButtonClick={onStyle6} fontname={"Gill Sans"} />
+      </div>
     </div>
   );
 }
