@@ -1,0 +1,18 @@
+@font-face {
+  font-family: Aston;
+  src: url(../../assets/Fonts/Aston-Script.ttf);
+}
+
+.title {
+  color: rgb(88, 88, 88);
+  font-family: "Aston" !important;
+  font-size: 30px;
+  /* text-shadow: 0px 0.6px 0 #656565; */
+}
+
+.title-container-text {
+  margin-top: 40px;
+  display: inline-block;
+  transform: skewX(-10deg);
+  transform: rotate(-4deg);
+}
