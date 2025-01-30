@@ -1,0 +1,7 @@
+.postcard-container {
+  width: 600px; /* Adjust as needed */
+  height: 400px;
+  background-image: url("../../assets/Postcards/Postcard-7.png");
+  background-size: cover; /* Ensures the image fills the div */
+  background-position: center;
+}

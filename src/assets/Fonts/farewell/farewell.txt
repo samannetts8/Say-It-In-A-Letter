@@ -1,0 +1,34 @@
+Font: Farewell
+Created By: Matthew Welch
+E-Mail: matt@squaregear.net
+Web Address: http://www.squaregear.net/fonts/
+
+My fonts are all free.  You can use them for personal or commercial projects,
+and I ask for no money.  I would, however, love to hear from you.  If you use
+my fonts for something please e-mail me letting me know how you used it.  Send
+me a copy if you can or let me know where I can find your work. You are under
+no obligation to do this, I just like to see how my fonts get used.
+
+A license.txt file should have been included with this font, explaining the
+license under which it is made available. You can also read it at:
+
+http://www.squaregear.net/fonts/license.shtml
+
+About the font:
+
+I started out thinking I'd make this font look like my handwriting
+but after all the careful work making the letters connect I realized
+that this is way too neat to look anything like my handwriting.  I
+included some ligatures where I found they helped the look of the 
+writing:
+
+   _ => ll
+    * => oo
+    ^ => tt
+    & => of
+    # => rr
+
+The spacing of the capitals is a little weird so using all caps
+comes out funny.  If you really need all caps I can put in some
+kerning pairs to clean it up.
+
