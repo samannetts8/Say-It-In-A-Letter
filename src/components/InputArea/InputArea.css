@@ -12,6 +12,14 @@
 
 .fontbutton-container {
   display: flex;
-  flex: 2;
+  flex-wrap: wrap; /* Allow wrapping */
   padding: 20px;
+  flex: 2;
+  flex-direction: row;
+}
+
+.fontbutton-container button {
+  flex: 0 1 calc(50% - 10px); /* 50% width minus some space for margin */
+  margin: 5px; /* Optional: add spacing between buttons */
+  box-sizing: border-box;
 }
