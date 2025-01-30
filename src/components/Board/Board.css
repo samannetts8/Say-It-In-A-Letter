@@ -1,7 +1,32 @@
 .postcard-container {
+  display: flex;
   width: 600px; /* Adjust as needed */
   height: 400px;
   background-image: url("../../assets/Postcards/Postcard-7.png");
   background-size: cover; /* Ensures the image fills the div */
   background-position: center;
+}
+
+.right-message-container,
+.left-message-container {
+  flex: 0 1 50%; /* Prevents growth, allows shrinking, and sets initial width to 50% */
+  overflow-wrap: break-word; /* Makes text wrap within the container */
+  white-space: normal; /* Ensures text breaks normally */
+  padding: 10px; /* Optional: add some padding for spacing */
+}
+
+.right-message-container {
+  overflow: hidden; /* Hides any content that overflows */
+  white-space: pre-line; /* Preserves line breaks in the text */
+  padding: 30px;
+  padding-left: 40px;
+  padding-right: 48px;
+  padding-bottom: 40px;
+  display: flex; /* Allows control over content layout */
+  flex-direction: column; /* Stacks the content vertically */
+  justify-content: flex-start;
+}
+
+.left-message-container {
+  overflow: hidden; /* Hides any content that overflows */
 }
