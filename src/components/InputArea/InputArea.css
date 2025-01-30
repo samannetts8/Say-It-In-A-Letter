@@ -1,0 +1,17 @@
+.form-container {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+}
+
+.fontsize-container {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+}
+
+.fontbutton-container {
+  display: flex;
+  flex: 2;
+  padding: 20px;
+}

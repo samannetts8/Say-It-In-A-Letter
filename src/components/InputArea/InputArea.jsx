@@ -1,6 +1,7 @@
 import InputTextBox from "../InputTextBox/InputTextBox";
 import FontSize from "../FontSize/FontSize";
 import FontStyle from "../FontStyle/FontStyle";
+import "./InputArea.css";
 
 export default function InputArea({
   onInputChange,
@@ -12,19 +13,25 @@ export default function InputArea({
   onStyle5,
 }) {
   return (
-    <div>
-      <InputTextBox
-        onInputChange={onInputChange}
-        textboxContent={textboxContent}
-      />
-      <FontSize />
-      <FontStyle
-        onStyle1={onStyle1}
-        onStyle2={onStyle2}
-        onStyle3={onStyle3}
-        onStyle4={onStyle4}
-        onStyle5={onStyle5}
-      />
-    </div>
+    <>
+      <div className="form-container">
+        <InputTextBox
+          onInputChange={onInputChange}
+          textboxContent={textboxContent}
+        />
+      </div>
+      <div className="fontsize-container">
+        <FontSize />
+      </div>
+      <div className="fontbutton-container">
+        <FontStyle
+          onStyle1={onStyle1}
+          onStyle2={onStyle2}
+          onStyle3={onStyle3}
+          onStyle4={onStyle4}
+          onStyle5={onStyle5}
+        />
+      </div>
+    </>
   );
 }

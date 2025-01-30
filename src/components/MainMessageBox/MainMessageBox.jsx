@@ -1,3 +1,5 @@
+import "./MainMessageBox.css";
+
 export default function MainMessageBox({ MessageBoxContent, fontStyle }) {
-  return <p style={{ fontFamily: fontStyle }}>{MessageBoxContent}</p>;
+  return <p className={fontStyle}>{MessageBoxContent}</p>;
 }
