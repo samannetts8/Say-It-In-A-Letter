@@ -10,7 +10,7 @@ export default function FontStyle({
   onStyle6,
 }) {
   return (
-    <div>
+    <>
       <div className={"HomemadeApple-button"}>
         <StyleButton
           onStyleButtonClick={onStyle1}
@@ -32,6 +32,6 @@ export default function FontStyle({
       <div className={"Gill-Sans"}>
         <StyleButton onStyleButtonClick={onStyle6} fontname={"Gill Sans"} />
       </div>
-    </div>
+    </>
   );
 }

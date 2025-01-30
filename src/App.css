@@ -11,15 +11,28 @@
 
 .input-container {
   display: flex;
-  flex: 0.75;
-  background-color: rgb(255, 229, 233);
+  flex: 0.6;
   height: 100%;
+  background-color: rgb(255, 233, 235);
   flex-direction: column;
+}
+
+.input-container:hover {
+  overflow-y: auto; /* Show scrollbar on hover */
+}
+
+.input-container::-webkit-scrollbar {
+  width: 2px; /* Adjust scrollbar width */
+}
+
+.input-container::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 0, 0, 0.5); /* Scrollbar thumb color */
+  border-radius: 2px;
 }
 
 .output-container {
   display: flex;
   height: 100%;
-  flex: 2.25;
+  flex: 1.8;
   flex-direction: column;
 }
