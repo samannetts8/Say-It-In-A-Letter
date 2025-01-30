@@ -1,0 +1,13 @@
+.header-container {
+  display: flex;
+  flex: 0.75;
+  margin: auto;
+  align-items: center;
+}
+
+.board-container {
+  flex: 2.25;
+  display: flex;
+  margin: auto;
+  align-items: center;
+}

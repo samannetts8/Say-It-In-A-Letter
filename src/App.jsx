@@ -5,43 +5,47 @@ import "./App.css";
 
 function App() {
   const [inputTextBox, setInputTextBox] = useState("");
-  const [font, setFont] = useState("Harmond");
+  const [font, setFont] = useState("one");
 
   function handleTextBoxChange(newTextInput) {
     setInputTextBox(newTextInput);
   }
 
   function changeFont() {
-    setFont("impact");
+    setFont("two");
   }
 
   function changeFont2() {
-    setFont("NeneMentana");
+    setFont("three");
   }
 
   function changeFont3() {
-    setFont("Harmond");
+    setFont("four");
   }
 
   function changeFont4() {
-    setFont("impact");
+    setFont("five");
   }
   function changeFont5() {
-    setFont("NeneMentana");
+    setFont("six");
   }
 
   return (
-    <div>
-      <InputArea
-        onInputChange={handleTextBoxChange}
-        textboxContent={inputTextBox}
-        onStyle1={changeFont}
-        onStyle2={changeFont2}
-        onStyle3={changeFont3}
-        onStyle4={changeFont4}
-        onStyle5={changeFont5}
-      />
-      <OutputArea MessageBoxContent={inputTextBox} fontStyle={font} />
+    <div className="main-container">
+      <div className="input-container">
+        <InputArea
+          onInputChange={handleTextBoxChange}
+          textboxContent={inputTextBox}
+          onStyle1={changeFont}
+          onStyle2={changeFont2}
+          onStyle3={changeFont3}
+          onStyle4={changeFont4}
+          onStyle5={changeFont5}
+        />
+      </div>
+      <div className="output-container">
+        <OutputArea MessageBoxContent={inputTextBox} fontStyle={font} />
+      </div>
     </div>
   );
 }
