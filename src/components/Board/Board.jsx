@@ -4,14 +4,14 @@ import "./Board.css";
 export default function Board({ MessageBoxContent, fontStyle }) {
   return (
     <>
-      <div>⬅️</div>
+      <div>o</div>
       <div className="postcard-container">
         <MainMessageBox
           MessageBoxContent={MessageBoxContent}
           fontStyle={fontStyle}
         />
       </div>
-      <div>➡️</div>
+      <div>o</div>
     </>
   );
 }

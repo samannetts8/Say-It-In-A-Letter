@@ -1,3 +1,9 @@
+import "./Title.css";
+
 export default function Title() {
-  return <h1>Postcard Maker!!</h1>;
+  return (
+    <div className="title-container-text">
+      <p className="title">Say it in a letter</p>
+    </div>
+  );
 }
