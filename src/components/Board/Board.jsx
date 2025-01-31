@@ -15,7 +15,7 @@ const stickers = {
 
 
 
-export default function Board({ MessageBoxContent, fontStyle, sticker, color }) {
+export default function Board({ MessageBoxContent, fontStyle, sticker, color,fontSizeAdjust }) {
   const [background, setBackground] = useState(0);
 
   function handleNextClick() {
@@ -41,6 +41,7 @@ export default function Board({ MessageBoxContent, fontStyle, sticker, color }) 
             MessageBoxContent={MessageBoxContent}
             fontStyle={fontStyle}
             color={color}
+            fontSizeAdjust={fontSizeAdjust}
           />
         </div>
         <div className="left-message-container">

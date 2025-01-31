@@ -8,6 +8,15 @@ function App() {
   const [font, setFont] = useState("one");
   const [color, setColor] = useState("#000");
   const [sticker, setSticker] = useState("");
+  const [fontSizeAdjust, setfontSizeAdjust] = useState(0);
+
+  function decreaseFontSize() {
+    setfontSizeAdjust((previousSize) => previousSize - 1);
+  }
+
+  function increaseFontSize() {
+    setfontSizeAdjust((previousSize) => previousSize + 1);
+  }
 
   function changebowdrawingsticker() {
     setSticker("Bowdrawing");
@@ -68,17 +77,18 @@ function App() {
           onBowClick={changebowsticker}
           onHeartClick={changeheartsticker}
           onStampClick={changestampsticker}
+          onDecreaseFontSize={decreaseFontSize}
+          onIncreaseFontSize={increaseFontSize}
+          fontSize={fontSizeAdjust}
         />
       </div>
       <div className="output-container">
         <OutputArea
-         
           MessageBoxContent={inputTextBox}
-         
           fontStyle={font}
           color={color}
-       
           sticker={sticker}
+          fontSizeAdjust={fontSizeAdjust}
         />
       </div>
     </div>

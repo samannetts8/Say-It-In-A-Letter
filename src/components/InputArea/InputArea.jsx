@@ -23,6 +23,9 @@ export default function InputArea({
   onBowClick,
   onHeartClick,
   onStampClick,
+  onDecreaseFontSize,
+  onIncreaseFontSize,
+  fontSize,
 }) {
   return (
     <>
@@ -33,7 +36,11 @@ export default function InputArea({
         />
       </div>
       <div className="fontsize-container">
-        <FontSize />
+        <FontSize
+          onDecreaseFontSize={onDecreaseFontSize}
+          onIncreaseFontSize={onIncreaseFontSize}
+          fontSize={fontSize}
+        />
       </div>
       <div className="font-title-div">
         <p className="pick-a-font">Choose A Font:</p>
