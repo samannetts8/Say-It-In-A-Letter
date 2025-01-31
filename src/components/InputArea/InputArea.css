@@ -26,7 +26,7 @@
   padding-left: 20px;
   flex: 1;
   flex-direction: row;
-} 
+}
 
 .fontbutton-container button {
   flex: 0 1 calc(50% - 10px); /* 50% width minus some space for margin */
@@ -38,7 +38,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 3em; 
+  gap: 3em;
   padding: 50px;
   padding-left: 20px;
 }
@@ -49,5 +49,11 @@
   object-fit: cover;
   padding: 10px;
   background-color: white;
-  border-radius: 20px; 
+  border-radius: 20px;
+}
+
+.color-picker {
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
 }

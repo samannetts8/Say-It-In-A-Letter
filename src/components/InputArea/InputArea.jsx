@@ -47,15 +47,15 @@ export default function InputArea({
           onStyle5={onStyle5}
           onStyle6={onStyle6}
         />
-        <div className="color-picker">
-          <ColorPicker setColor={setColor} />
-        </div>
       </div>
       <div className="sticker-section">
         <img src={Bowdrawing} onClick={onBowDrawingClick}></img>
         <img src={Bow} onClick={onBowClick}></img>
         <img src={Heart} onClick={onHeartClick}></img>
         <img src={Stamp} onClick={onStampClick}></img>
+      </div>
+      <div className="color-picker">
+        <ColorPicker setColor={setColor} />
       </div>
     </>
   );
