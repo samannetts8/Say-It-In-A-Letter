@@ -6,6 +6,7 @@ import "./App.css";
 function App() {
   const [inputTextBox, setInputTextBox] = useState("");
   const [font, setFont] = useState("one");
+  const [color, setColor] = useState("#000");
   const [sticker, setSticker] = useState("");
 
   function changebowdrawingsticker() {
@@ -54,6 +55,7 @@ function App() {
     <div className="main-container">
       <div className="input-container">
         <InputArea
+          setColor={setColor}
           onInputChange={handleTextBoxChange}
           textboxContent={inputTextBox}
           onStyle1={changeFont}
@@ -70,8 +72,12 @@ function App() {
       </div>
       <div className="output-container">
         <OutputArea
+         
           MessageBoxContent={inputTextBox}
+         
           fontStyle={font}
+          color={color}
+       
           sticker={sticker}
         />
       </div>

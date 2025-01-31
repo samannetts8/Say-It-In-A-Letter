@@ -2,6 +2,7 @@ import InputTextBox from "../InputTextBox/InputTextBox";
 import FontSize from "../FontSize/FontSize";
 import FontStyle from "../FontStyle/FontStyle";
 import "./InputArea.css";
+import ColorPicker from "../Color picker/Color picker.jsx";
 import Bowdrawing from "../../assets/Images/Bow-drawing.png";
 import Bow from "../../assets/Images/Bow.png";
 import Heart from "../../assets/Images/Heart illustration.png";
@@ -16,6 +17,8 @@ export default function InputArea({
   onStyle4,
   onStyle5,
   onStyle6,
+  onColorChange,
+  setColor,
   onBowDrawingClick,
   onBowClick,
   onHeartClick,
@@ -44,7 +47,9 @@ export default function InputArea({
           onStyle5={onStyle5}
           onStyle6={onStyle6}
         />
-        <div className="color-picker"></div>
+        <div className="color-picker">
+          <ColorPicker setColor={setColor} />
+        </div>
       </div>
       <div className="sticker-section">
         <img src={Bowdrawing} onClick={onBowDrawingClick}></img>

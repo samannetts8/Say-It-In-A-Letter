@@ -2,7 +2,12 @@ import Title from "../Title/Title";
 import Board from "../Board/Board";
 import "./OutputArea.css";
 
-export default function OutputArea({ MessageBoxContent, fontStyle, sticker }) {
+export default function OutputArea({
+  MessageBoxContent,
+  fontStyle,
+  color,
+  sticker,
+}) {
   return (
     <>
       <div className="header-container">
@@ -12,6 +17,7 @@ export default function OutputArea({ MessageBoxContent, fontStyle, sticker }) {
         <Board
           MessageBoxContent={MessageBoxContent}
           fontStyle={fontStyle}
+          color={color}
           sticker={sticker}
         />
       </div>
