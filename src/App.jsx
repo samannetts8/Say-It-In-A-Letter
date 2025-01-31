@@ -6,6 +6,23 @@ import "./App.css";
 function App() {
   const [inputTextBox, setInputTextBox] = useState("");
   const [font, setFont] = useState("one");
+  const [sticker, setSticker] = useState("");
+
+  function changebowdrawingsticker() {
+    setSticker("Bowdrawing");
+  }
+
+  function changebowsticker() {
+    setSticker("Bow");
+  }
+
+  function changeheartsticker() {
+    setSticker("Heart");
+  }
+
+  function changestampsticker() {
+    setSticker("Stamp");
+  }
 
   function handleTextBoxChange(newTextInput) {
     setInputTextBox(newTextInput);
@@ -45,10 +62,18 @@ function App() {
           onStyle4={changeFont4}
           onStyle5={changeFont5}
           onStyle6={changeFont6}
+          onBowDrawingClick={changebowdrawingsticker}
+          onBowClick={changebowsticker}
+          onHeartClick={changeheartsticker}
+          onStampClick={changestampsticker}
         />
       </div>
       <div className="output-container">
-        <OutputArea MessageBoxContent={inputTextBox} fontStyle={font} />
+        <OutputArea
+          MessageBoxContent={inputTextBox}
+          fontStyle={font}
+          sticker={sticker}
+        />
       </div>
     </div>
   );
