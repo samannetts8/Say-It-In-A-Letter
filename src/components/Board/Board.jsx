@@ -2,6 +2,9 @@ import { useState } from "react";
 import MainMessageBox from "../MainMessageBox/MainMessageBox";
 import "./Board.css";
 
+
+export default function Board({ MessageBoxContent, fontStyle, color }) {
+
 export default function Board({ MessageBoxContent, fontStyle }) {
   const [background, setBackground] = useState(0);
 
@@ -27,6 +30,7 @@ export default function Board({ MessageBoxContent, fontStyle }) {
           <MainMessageBox
             MessageBoxContent={MessageBoxContent}
             fontStyle={fontStyle}
+            color={color}
           />
         </div>
         <div className="left-message-container"></div>
