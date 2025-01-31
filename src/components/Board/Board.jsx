@@ -5,6 +5,8 @@ import Bowdrawing from "../../assets/Images/Bow-drawing.png";
 import Bow from "../../assets/Images/Bow.png";
 import Heart from "../../assets/Images/Heart illustration.png";
 import Stamp from "../../assets/Images/Stamp.png";
+import rightheart from "../../assets/Images/heart-arrow-right.png";
+import leftheart from "../../assets/Images/hear-arrow-left.png";
 
 const stickers = {
   Bowdrawing,
@@ -37,7 +39,9 @@ export default function Board({
 
   return (
     <>
-      <div onClick={handleNextClick}>o</div>
+      <div onClick={handleNextClick} className="heart-container-left">
+        <img src={leftheart} />
+      </div>
       <div className={`postcard-container background-${background}`}>
         <div className="right-message-container">
           <MainMessageBox
@@ -52,7 +56,9 @@ export default function Board({
           </div>
         </div>
       </div>
-      <div onClick={handlePrevClick}>o</div>
+      <div onClick={handlePrevClick} className="heart-container">
+        <img src={rightheart} />
+      </div>
     </>
   );
 }

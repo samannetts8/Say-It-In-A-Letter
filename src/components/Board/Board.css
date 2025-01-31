@@ -58,3 +58,20 @@
   overflow: hidden; /* Hides any content that overflows */
   display: flex;
 }
+
+.heart-container-left {
+  display: flex;
+}
+
+.heart-container img {
+  width: 20%; /* Or any specific size */
+  height: auto; /* Maintains aspect ratio */
+  padding: 10px;
+}
+
+.heart-container-left img {
+  width: 20%; /* Or any specific size */
+  height: auto; /* Maintains aspect ratio */
+  padding: 10px;
+  margin-left: auto;
+}

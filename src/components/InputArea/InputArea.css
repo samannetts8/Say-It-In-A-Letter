@@ -17,7 +17,6 @@
   margin: 0;
   margin-bottom: 6px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-weight: bolder;
 }
 
 .fontbutton-container {
@@ -36,7 +35,6 @@
 
 .add-a-sticker {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-weight: bolder;
   align-items: center;
   padding-left: 30px;
   padding-top: 10px;
@@ -66,7 +64,6 @@
 
 .pick-a-color {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-weight: bolder;
   align-items: center;
   padding-left: 30px;
   padding-top: 0px;
@@ -79,6 +76,7 @@
   align-items: center;
   margin-left: 20px;
   padding: 10px;
+  padding-top: 0;
 }
 
 .left-sticker-container {
