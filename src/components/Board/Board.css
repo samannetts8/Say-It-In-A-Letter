@@ -2,9 +2,36 @@
   display: flex;
   width: 600px; /* Adjust as needed */
   height: 400px;
-  background-image: url("../../assets/Postcards/Postcard-7.png");
   background-size: cover; /* Ensures the image fills the div */
   background-position: center;
+}
+
+.background-0 {
+  background-image: url("../../assets/Postcards/Postcard-7.png");
+}
+
+.background-1 {
+  background-image: url("../../assets/Postcards/Postcard 1.png");
+}
+
+.background-2 {
+  background-image: url("../../assets/Postcards/Postcard 2.png");
+}
+
+.background-3 {
+  background-image: url("../../assets/Postcards/Postcard 3.png");
+}
+
+.background-4 {
+  background-image: url("../../assets/Postcards/Postcard 4.png");
+}
+
+.background-5 {
+  background-image: url("../../assets/Postcards/Postcard 5.png");
+}
+
+.background-6 {
+  background-image: url("../../assets/Postcards/Postcard 6.png");
 }
 
 .right-message-container,
