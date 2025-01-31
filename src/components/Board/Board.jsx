@@ -1,7 +1,7 @@
 import MainMessageBox from "../MainMessageBox/MainMessageBox";
 import "./Board.css";
 
-export default function Board({ MessageBoxContent, fontStyle }) {
+export default function Board({ MessageBoxContent, fontStyle, color }) {
   return (
     <>
       <div>o</div>
@@ -10,6 +10,7 @@ export default function Board({ MessageBoxContent, fontStyle }) {
           <MainMessageBox
             MessageBoxContent={MessageBoxContent}
             fontStyle={fontStyle}
+            color={color}
           />
         </div>
         <div className="left-message-container"></div>

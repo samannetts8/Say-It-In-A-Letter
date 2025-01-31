@@ -2,6 +2,7 @@ import InputTextBox from "../InputTextBox/InputTextBox";
 import FontSize from "../FontSize/FontSize";
 import FontStyle from "../FontStyle/FontStyle";
 import "./InputArea.css";
+import ColorPicker from "../Color picker/Color picker.jsx";
 
 export default function InputArea({
   onInputChange,
@@ -12,6 +13,8 @@ export default function InputArea({
   onStyle4,
   onStyle5,
   onStyle6,
+  onColorChange,
+  setColor,
 }) {
   return (
     <>
@@ -36,7 +39,9 @@ export default function InputArea({
           onStyle5={onStyle5}
           onStyle6={onStyle6}
         />
-        <div className="color-picker"></div>
+        <div className="color-picker">
+          <ColorPicker setColor={setColor} />
+        </div>
       </div>
       <div>Stickers go here</div>
       <div>Stickers go here</div>
