@@ -13,9 +13,12 @@ const stickers = {
   Stamp,
 };
 
-
-
-export default function Board({ MessageBoxContent, fontStyle, sticker, color }) {
+export default function Board({
+  MessageBoxContent,
+  fontStyle,
+  sticker,
+  color,
+}) {
   const [background, setBackground] = useState(0);
 
   function handleNextClick() {
@@ -44,7 +47,9 @@ export default function Board({ MessageBoxContent, fontStyle, sticker, color }) 
           />
         </div>
         <div className="left-message-container">
-          <img src={stickers[sticker]} alt={sticker} />
+          <div className="left-sticker-container">
+            <img src={stickers[sticker]} alt={sticker} />
+          </div>
         </div>
       </div>
       <div onClick={handlePrevClick}>o</div>

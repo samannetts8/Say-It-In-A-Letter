@@ -48,11 +48,17 @@ export default function InputArea({
           onStyle6={onStyle6}
         />
       </div>
+      <div>
+        <p className="add-a-sticker">Add a sticker</p>
+      </div>
       <div className="sticker-section">
         <img src={Bowdrawing} onClick={onBowDrawingClick}></img>
         <img src={Bow} onClick={onBowClick}></img>
         <img src={Heart} onClick={onHeartClick}></img>
         <img src={Stamp} onClick={onStampClick}></img>
+      </div>
+      <div>
+        <p className="pick-a-color">Pick a text colour</p>
       </div>
       <div className="color-picker">
         <ColorPicker setColor={setColor} />

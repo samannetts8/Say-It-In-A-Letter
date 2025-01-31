@@ -56,4 +56,5 @@
 
 .left-message-container {
   overflow: hidden; /* Hides any content that overflows */
+  display: flex;
 }
