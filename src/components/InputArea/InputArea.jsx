@@ -43,7 +43,7 @@ export default function InputArea({
         />
       </div>
       <div className="font-title-div">
-        <p className="pick-a-font">Choose A Font:</p>
+        <p className="pick-a-font">CHOOSE A FONT:</p>
       </div>
       <div className="fontbutton-container">
         <FontStyle
@@ -54,15 +54,21 @@ export default function InputArea({
           onStyle5={onStyle5}
           onStyle6={onStyle6}
         />
-        <div className="color-picker">
-          <ColorPicker setColor={setColor} />
-        </div>
+      </div>
+      <div>
+        <p className="add-a-sticker">ADD A STICKER</p>
       </div>
       <div className="sticker-section">
         <img src={Bowdrawing} onClick={onBowDrawingClick}></img>
         <img src={Bow} onClick={onBowClick}></img>
         <img src={Heart} onClick={onHeartClick}></img>
         <img src={Stamp} onClick={onStampClick}></img>
+      </div>
+      <div>
+        <p className="pick-a-color">PICK A TEXT COLOUR</p>
+      </div>
+      <div className="color-picker">
+        <ColorPicker setColor={setColor} />
       </div>
     </>
   );
