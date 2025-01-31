@@ -7,6 +7,7 @@ export default function OutputArea({
   fontStyle,
   color,
   sticker,
+  fontSizeAdjust,
 }) {
   return (
     <>
@@ -19,6 +20,7 @@ export default function OutputArea({
           fontStyle={fontStyle}
           color={color}
           sticker={sticker}
+          fontSizeAdjust={fontSizeAdjust}
         />
       </div>
     </>

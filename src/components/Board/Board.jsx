@@ -20,6 +20,7 @@ export default function Board({
   fontStyle,
   sticker,
   color,
+  fontSizeAdjust,
 }) {
   const [background, setBackground] = useState(0);
 
@@ -48,6 +49,7 @@ export default function Board({
             MessageBoxContent={MessageBoxContent}
             fontStyle={fontStyle}
             color={color}
+            fontSizeAdjust={fontSizeAdjust}
           />
         </div>
         <div className="left-message-container">
