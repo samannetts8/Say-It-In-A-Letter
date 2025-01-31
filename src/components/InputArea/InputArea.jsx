@@ -3,6 +3,10 @@ import FontSize from "../FontSize/FontSize";
 import FontStyle from "../FontStyle/FontStyle";
 import "./InputArea.css";
 import ColorPicker from "../Color picker/Color picker.jsx";
+import Bowdrawing from "../../assets/Images/Bow-drawing.png";
+import Bow from "../../assets/Images/Bow.png";
+import Heart from "../../assets/Images/Heart illustration.png";
+import Stamp from "../../assets/Images/Stamp.png";
 
 export default function InputArea({
   onInputChange,
@@ -15,6 +19,10 @@ export default function InputArea({
   onStyle6,
   onColorChange,
   setColor,
+  onBowDrawingClick,
+  onBowClick,
+  onHeartClick,
+  onStampClick,
 }) {
   return (
     <>
@@ -43,34 +51,12 @@ export default function InputArea({
           <ColorPicker setColor={setColor} />
         </div>
       </div>
-      <div>Stickers go here</div>
-      <div>Stickers go here</div>
-      <div>Stickers go here</div>
-      <div>Stickers go here</div>
-      <div>Stickers go here</div>
-      <div>Stickers go here</div>
-      <div>Stickers go here</div>
-      <div>Stickers go here</div>
-      <div>Stickers go here</div>
-      <div>Stickers go here</div>
-      <div>Stickers go here</div>
-      <div>Stickers go here</div>
-      <div>Stickers go here</div>
-      <div>Stickers go here</div>
-      <div>Stickers go here</div>
-      <div>Stickers go here</div>
-      <div>Stickers go here</div>
-      <div>Stickers go here</div>
-      <div>Stickers go here</div>
-      <div>Stickers go here</div>
-      <div>Stickers go here</div>
-      <div>Stickers go here</div>
-      <div>Stickers go here</div>
-      <div>Stickers go here</div>
-      <div>Stickers go here</div>
-      <div>Stickers go here</div>
-      <div>Stickers go here</div>
-      <div>Stickers go here</div>
+      <div className="sticker-section">
+        <img src={Bowdrawing} onClick={onBowDrawingClick}></img>
+        <img src={Bow} onClick={onBowClick}></img>
+        <img src={Heart} onClick={onHeartClick}></img>
+        <img src={Stamp} onClick={onStampClick}></img>
+      </div>
     </>
   );
 }
