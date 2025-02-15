@@ -87,12 +87,14 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 
 ## Authors
 
+### Sam Annetts
+
+- [LinkedIn](https://www.linkedin.com/in/sam-annetts-cfa-a9743b163/)
+- [GitHub](https://github.com/samannetts8)
+
 ### Caitlin Young
 
 - [LinkedIn](https://www.linkedin.com/in/caitlin-young-4544a5226/)
 - [GitHub](https://github.com/ccyoung22)
 
-### Sam Annetts
 
-- [LinkedIn](https://www.linkedin.com/in/sam-annetts-cfa-a9743b163/)
-- [GitHub](https://github.com/samannetts8)
